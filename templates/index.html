@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+    <style>
+        body {
+            background-color:pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome my docker</h1>
+        <div>
+        {% for x in obj %}
+            <div>
+                <div>{{ x.name }}</div>
+                <div>{{ x.des }}</div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
